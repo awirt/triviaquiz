@@ -12,8 +12,12 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/' do
-    @the_fortune = get_fortune
-    @the_user = params[:user]
+    @autobots_response = params[:autobots_response]
+    @newgirl_response = params[:newgirl_response]
+    @lincoln_response = params[:lincoln_response]
+
+    trivia_quiz = Trivia.new 
+    @message = trivia_quiz.play_quiz(@autobots_response, @newgirl_response, @lincoln_response)
     return erb :results
   end
 end

@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Fortune Teller! </title>
-    <link rel = "stylesheet" href = "program/css/style.css">
+    <title>Trivia Quiz!!!</title>
+    <link rel = "stylesheet" href = "css/style.css">
   </head>
-  
   <body>
-    <h3> Please type your name to receive your FORTUNE!!!! </h3>
+    <h1>Trivia Quiz!</h1>
     <form method=POST>
-      <input type = "text" name = "user">
-      <br>
-      <input type = "submit" value = "CLICK! YOUR MIND WILL BE BLOWN">
+      <h3>Who is the leader of the autobots in the "Transformers" franchise?</h3>
+          <input type="radio" name="autobots_response" value="Megatron"> Megatron <br>
+          <input type="radio" name="autobots_response" value="Optimus Prime"> Optimus Prime <br>
+          <input type="radio" name="autobots_response" value="Bumblebee"> Bumblebee
+      
+      <h3>Who is the main character in the series "New Girl"? (please use lowercase)</h3>
+          <input type="text" name="newgirl_response">
+      
+      <h3>Who assassinated Abraham Lincoln?</h3>
+          <input type="radio" name="lincoln_response" value="Lee Harvey Oswald"> Lee Harvey Oswald <br>
+          <input type="radio" name="lincoln_response" value="John Wilkes Booth"> John Wilkes Booth <br>
+          <input type="radio" name="lincoln_response" value="Charles J. Guiteau"> Charles J. Guiteau <br> <br>
+      
+      <input type="submit" value="Click me to submit your answers">
+      
     </form>
   </body>
-  
 </html>
